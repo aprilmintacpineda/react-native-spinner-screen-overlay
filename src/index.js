@@ -1,7 +1,7 @@
 /** @format */
 
 import React from 'react';
-import { Dimensions, View, ActivityIndicator, StyleSheet } from 'react-native';
+import { Dimensions, View, ActivityIndicator, StyleSheet, Keyboard } from 'react-native';
 
 const dimensions = Dimensions.get('window');
 
@@ -25,6 +25,13 @@ const styles = StyleSheet.create({
 
 function RNScreenOverlaySpinner (props) {
   this.props = props;
+
+  this.hideKeyboard = () => {
+    if (this.props.visible) Keyboard.dismiss();
+  };
+
+  this.componentDidMount = this.hideKeyboard;
+  this.componentDidUpdate = this.hideKeyboard;
 
   this.render = () => {
     if (!this.props.visible) return null;
