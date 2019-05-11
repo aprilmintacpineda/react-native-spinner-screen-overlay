@@ -55,7 +55,7 @@ export default class LoginRoute extends Component {
 |---|---|---|---|
 |modalBackground|The background color of the modal.|[Any color recognized by React-Native.](https://facebook.github.io/react-native/docs/colors)|rgba(0, 0, 0, 0.3)
 |spinnerColor|The color of the ActivityIndicator.|[Any color recognized by React-Native.](https://facebook.github.io/react-native/docs/colors)|#000
-|spinnerContainerStyles|An object passed to the View which serves as the container of the ActivityIndicator.|A valid React-Native StyleSheet| `{ padding: 20, backgroundColor: '#fff', borderRadius: 20 }`
+|spinnerContainerStyles|An object passed to the View which serves as the container of the ActivityIndicator.|[A valid React-Native StyleSheet](https://facebook.github.io/react-native/docs/stylesheet)| `{ padding: 20, backgroundColor: '#fff', borderRadius: 20 }`
 
 # Contributing
 
